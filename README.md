@@ -1,4 +1,5 @@
-# 🧠 Multi-Agent Reasoning System with Memory & Self-Corrective RAG
+# 🧠 Multi-Agent System with Long-Term User Memory & Self-Corrective RAG
+
 
 This repository contains a modular, extensible multi-agent system featuring:
 
