@@ -9,6 +9,10 @@ This repository contains a modular, extensible multi-agent system featuring:
 * 🌐 Web fallback for unanswered queries
 * 🔗 Persistent memory using PostgreSQL
 
+
+This system is designed for integration into an online course or educational platform, where it acts as a smart learning assistant. By building a structured long-term memory of each user’s academic background, interests, and goals, it delivers personalized support throughout their learning journey. The multi-agent architecture includes specialized tools for handling arithmetic calculations and a self-corrective RAG (Retrieval-Augmented Generation) agent that retrieves, verifies, and refines answers to study-related questions. This ensures learners receive accurate, context-aware responses tailored to their needs.
+
+
 ---
 
 <img src="./results/agent_architecture.JPG" alt="1" width="800"/>
