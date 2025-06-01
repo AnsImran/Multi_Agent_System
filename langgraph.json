@@ -1,0 +1,8 @@
+{
+    "dependencies":[","],
+    "graphs":{
+        "main_agent": "./Multi_Agent_System.py:graph",
+        "self_corrective_rag_agent":"./Self_Corrective_RAG_Agent.py:self_corrective_rag_agent"
+    },
+    "env":".env"
+}
