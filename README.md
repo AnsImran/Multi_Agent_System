@@ -19,7 +19,6 @@ This system is designed for integration into an online course or educational pla
 * (Web-Fallback) Self-Corrective_RAG sub-graph in action: https://youtu.be/Z460EwiRhe8
 * Long-Term User Memory module in action: https://youtu.be/lDHMzpfKkjI
 * Calculators node in action: https://youtu.be/ZLCACAmxWRE 
----
 
 <img src="./results/agent_architecture.JPG" alt="1" width="800"/>
 
