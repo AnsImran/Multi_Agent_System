@@ -77,9 +77,9 @@ pip install -r requirements.txt
 
 Make sure you have:
 
-* Python 3.10+
+* Python 3.11+
 * PostgreSQL running and accessible
-* Environment variables set (e.g. `MAIN_AGENT_DB_URI`, OpenAI API keys, etc.)
+* Environment variables set (e.g. OpenAI API keys, etc.)
 
 ---
 
@@ -88,7 +88,15 @@ Make sure you have:
 The main entry point is the compiled graph:
 
 ```python
-output = graph.invoke({"question": "What is 17 * 4?"}, config={"configurable": {"user_id": "user_123"}})
+config = {"configurable": {"thread_id": "1", "user_id": "1"}}
+
+# User input to create a profile memory
+input_messages = [HumanMessage(content="No, sorry my name is Lance. kindly update my profile")]
+
+# Run the graph
+for chunk in graph.stream({"messages": input_messages}, config, stream_mode="values"):
+    chunk["messages"][-1].pretty_print()
+
 ```
 
 ### Configurable parameters:
@@ -117,7 +125,6 @@ Automatically extracts and stores:
 * Academic history
 * Interests
 * Social graph
-* Named entities
 
 ---
 
@@ -143,7 +150,7 @@ Automatically extracts and stores:
 
 ## 📌 Roadmap
 
-* [ ] Web search fallback integration
+
 * [ ] GUI interface with streamlit or FastAPI
 * [ ] Additional calculator tools (e.g., statistics, matrix math)
 * [ ] Real-time memory editing via API
