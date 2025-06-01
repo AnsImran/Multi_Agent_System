@@ -91,7 +91,7 @@ The main entry point is the compiled graph:
 config = {"configurable": {"thread_id": "1", "user_id": "1"}}
 
 # User input to create a profile memory
-input_messages = [HumanMessage(content="No, sorry my name is Lance. kindly update my profile")]
+input_messages = [HumanMessage(content="Hi my name is Lance.")]
 
 # Run the graph
 for chunk in graph.stream({"messages": input_messages}, config, stream_mode="values"):
