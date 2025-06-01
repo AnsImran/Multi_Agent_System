@@ -226,12 +226,12 @@ def interim_rag_node(state: GraphState, config: RunnableConfig, store: BaseStore
 
 class Profile(BaseModel):
     """Represents structured user profile information."""
-    name: Optional[str] = Field(description="User's name", default=None)
-    bachelor: Optional[str] = Field(description="Bachelor's degree subject(s)", default=None)
-    master: Optional[str] = Field(description="Master's degree subject(s)", default=None)
-    phd: Optional[str] = Field(description="PhD subject(s)", default=None)
-    connections: list[str] = Field(description="User's personal connections (friends, family, coworkers)", default_factory=list)
-    interests: list[str] = Field(description="User's interests", default_factory=list)
+    name:        Optional[str]  = Field(description="User's name",                                              default=None)
+    bachelor:    Optional[str]  = Field(description="Bachelor's degree subject",                                default=None)
+    master:      Optional[str]  = Field(description="Master's degree subject",                                  default=None)
+    phd:         Optional[str]  = Field(description="PhD subject",                                              default=None)
+    connections: list[str]      = Field(description="User's personal connections (friends, family, coworkers)", default_factory=list)
+    interests:   list[str]      = Field(description="User's interests",                                         default_factory=list)
 
 
 # -------------------------
