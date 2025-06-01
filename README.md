@@ -10,7 +10,7 @@ This repository contains a modular, extensible multi-agent system featuring:
 
 ---
 
-<img src="./results/agent_architecture.JPG" alt="1" width="1000"/>
+<img src="./results/agent_architecture.JPG" alt="1" width="800"/>
 
 ---
 
