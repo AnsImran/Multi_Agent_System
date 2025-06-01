@@ -12,7 +12,12 @@ This repository contains a modular, extensible multi-agent system featuring:
 
 This system is designed for integration into an online course or educational platform, where it acts as a smart learning assistant. By building a structured long-term memory of each user’s academic background, interests, and goals, it delivers personalized support throughout their learning journey. The multi-agent architecture includes specialized tools for handling arithmetic calculations and a self-corrective RAG (Retrieval-Augmented Generation) agent that retrieves, verifies, and refines answers to study-related questions. This ensures learners receive accurate, context-aware responses tailored to their needs.
 
+---
+## Agent in action
 
+* Self-Corrective_RAG sub-graph in action: https://youtu.be/9tdjUe1EOGM
+* Long-Term User Memory module in action: https://youtu.be/lDHMzpfKkjI
+* Calculators node in action: https://youtu.be/ZLCACAmxWRE 
 ---
 
 <img src="./results/agent_architecture.JPG" alt="1" width="800"/>
