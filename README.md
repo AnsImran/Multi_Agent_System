@@ -95,18 +95,31 @@ Make sure you have:
 
 ## ⚙️ Usage
 
-The main entry point is the compiled graph:
+### 🧪 Quick Start (Recommended)
+
+After cloning the repository and installing dependencies, launch the agent using:
+
+```bash
+langgraph dev
+```
+
+This will open the agent in your browser via **LangGraph Studio**, providing a full interactive environment. You can test the entire agent pipeline — from memory capture to calculations and RAG-based responses. All local code changes will be reflected live in the Studio session. All required dependencies are already included in the provided requirements.
+
+### Running Locally in a Jupyter Environment
+
+The main entry point for this system is the compiled LangGraph agent. Here's a basic example of how to interact with it programmatically:
 
 ```python
+from langchain_core.messages import HumanMessage
+
 config = {"configurable": {"thread_id": "1", "user_id": "1"}}
 
-# User input to create a profile memory
+# Example user message to initiate profile memory
 input_messages = [HumanMessage(content="Hi my name is Lance.")]
 
 # Run the graph
 for chunk in graph.stream({"messages": input_messages}, config, stream_mode="values"):
     chunk["messages"][-1].pretty_print()
-
 ```
 
 ### Configurable parameters:
