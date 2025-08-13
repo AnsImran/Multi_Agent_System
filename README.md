@@ -1,16 +1,14 @@
-# 🧠 Multi-Agent System with Long-Term User Memory & Self-Corrective RAG
+# Smart Learning Assistant for Online Education Platforms (LangChain / LangGraph-based)
+## 🧠 Multi-Agent System with Long-Term User Memory & Self-Corrective RAG
 
 
-This repository contains a modular, extensible multi-agent system featuring:
+A modular multi-agent-system designed to integrate seamlessly into e-learning platforms, acting as a smart learning assistant. Which consists of:
 
-* 📊 Arithmetic and scientific calculators
-* 🧠 Long-term memory with profile extraction and update
-* 🔁 A **Self-Corrective RAG Agent** for document-based Q\&A with hallucination detection and retry mechanisms
-* 🌐 Web fallback for unanswered queries
-* 🔗 Persistent memory using PostgreSQL
+* 🗂 **Supervisor / Router Node** – Directs incoming requests to the most suitable worker / agent / node for processing.
+* 🔁 **Self-Corrective RAG Agent** – Retrieves and generates answers by first searching internal documents. If no results are found, it rewrites the query; if still no relevant results appear, it falls back to web search, and finally verifies its own output against sources to combat hallucinations.
+* 🧠 **Long-Term Memory Node** – Extracts personal information from learner interactions, enabling valuable analytics for educators and platform owners.
+* 📊 **Computations Node** – Performs basic algebra calculations today, with planned upgrades to handle calculus operations such as integration and differentiation for STEM learners.
 
-
-This system is designed for integration into an online course or educational platform, where it acts as a smart learning assistant. By building a structured long-term memory of each user’s academic background, interests, and goals, it delivers personalized support throughout their learning journey. The multi-agent architecture includes specialized tools for handling arithmetic calculations and a self-corrective RAG (Retrieval-Augmented Generation) agent that retrieves, verifies, and refines answers to study-related questions. This ensures learners receive accurate, context-aware responses tailored to their needs.
 
 ---
 ## Agent in action
