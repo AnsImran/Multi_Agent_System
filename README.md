@@ -2,7 +2,7 @@
 ## 🧠 Multi-Agent System with Long-Term User Memory & Self-Corrective RAG
 
 
-A modular multi-agent-system designed to integrate seamlessly into e-learning platforms, acting as a smart learning assistant. Which consists of:
+A modular multi-agent-system designed to integrate seamlessly into e-learning platforms, acting as a smart learning assistant. It consists of:
 
 * 🗂 **Supervisor / Router Node** – Directs incoming requests to the most suitable worker / agent / node for processing.
 * 🔁 **Self-Corrective RAG Agent** – Retrieves and generates answers by first searching internal documents. If no results are found, it rewrites the query; if still no relevant results appear, it falls back to web search, and finally verifies its own output against sources to combat hallucinations.
